@@ -1,0 +1,135 @@
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color: #f3edda;
+    color: #394b36;
+    margin: 0;
+}
+
+header {
+    background-color: #45634b;
+    color: #fff8df;
+    padding: 20px;
+    border-bottom: 5px solid #b8a477;
+}
+
+header h1 {
+    margin: 5px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff4d6;
+    margin-right: 22px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #e8c77a;
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    margin: 30px auto;
+}
+
+main h1 {
+    color: #45634b;
+}
+
+main p {
+    line-height: 1.7;
+}
+
+.search-form {
+    margin: 25px 0;
+}
+
+.search-form input {
+    padding: 10px;
+    width: 230px;
+    background-color: #fffdf3;
+    border: 1px solid #a6a080;
+    font-family: Georgia, serif;
+}
+
+.search-form button {
+    padding: 10px 18px;
+    background-color: #9aab7b;
+    color: #263d2c;
+    border: 1px solid #71835c;
+    cursor: pointer;
+    font-family: Georgia, serif;
+}
+
+.search-form button:hover {
+    background-color: #c3cf9e;
+}
+
+.course-card {
+    background-color: #fffbed;
+    border: 1px solid #c6b994;
+    padding: 20px;
+    margin: 18px 0;
+}
+
+.course-card h2 {
+    color: #52704c;
+    border-bottom: 1px dashed #b8a477;
+    padding-bottom: 8px;
+}
+
+.course-card p {
+    color: #625d49;
+    line-height: 1.7;
+}
+
+.course-info {
+    margin: 15px 0;
+}
+
+.course-info strong {
+    color: #a16b3b;
+    margin-left: 15px;
+}
+
+.details-btn {
+    display: inline-block;
+    color: #426b83;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.details-btn:hover {
+    color: #9b6942;
+}
+
+footer {
+    background-color: #45634b;
+    color: #fff8df;
+    padding: 18px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 4px solid #b8a477;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 92%;
+    }
+
+    nav a {
+        margin-right: 12px;
+    }
+
+    .search-form input {
+        width: 55%;
+    }
+}

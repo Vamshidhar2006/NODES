@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - Vamshi Training Institute</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container navbar">
+        <h1>Vamshi Training Institute</h1>
+
+        <nav>
+            <a href="/">Home</a>
+            <a href="/courses" class="active">Courses</a>
+            <a href="/about">About</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="hero">
+        <h1>Explore Our Courses</h1>
+        <p>Learn new skills and build your future with us.</p>
+    </section>
+
+    <form action="/courses" method="GET" class="search-form">
+        <input
+            type="text"
+            name="search"
+            placeholder="Search for a course..."
+            value="<%= search %>"
+        >
+        <button type="submit">Search</button>
+    </form>
+
+    <section class="course-section">
+
+        <div class="course-grid">
+
+            <% courses.forEach(course => { %>
+
+                <div class="course-card">
+
+                    <h2><%= course.name %></h2>
+
+                    <p><%= course.description %></p>
+
+                    <div class="course-info">
+                        <span>Duration: <%= course.duration %></span>
+                        <strong>₹<%= course.price %></strong>
+                    </div>
+
+                    <a href="/courses/<%= course.id %>" class="details-btn">
+                        View Details →
+                    </a>
+
+                </div>
+
+            <% }) %>
+
+        </div>
+
+        <% if (courses.length === 0) { %>
+            <div class="no-results">
+                <h2>No courses found!</h2>
+                <p>Try searching for another course.</p>
+                <a href="/courses">View all courses</a>
+            </div>
+        <% } %>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Vamshi Training Institute. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
